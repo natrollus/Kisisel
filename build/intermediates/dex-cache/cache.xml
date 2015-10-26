@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/byram/Dropbox/workspace/Kisisel/app/libs/sensorextension_v1.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c4c224d04e410dd2ecc8b57067c9c0b225d66636">
+        <dex dex="/Users/byram/Dropbox/workspace/Kisisel/app/build/intermediates/pre-dexed/debug/sensorextension_v1.1.0-01185795ed04d5dbe329cb5fee9c32802d5b3c9c.jar" />
+    </item>
+    <item
+        jar="/Users/byram/Dropbox/workspace/Kisisel/app/libs/sdk-v1.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
+        <dex dex="/Users/byram/Dropbox/workspace/Kisisel/app/build/intermediates/pre-dexed/debug/sdk-v1.0.0-c68a238496dd0ae71171fd01cd681c8349e72deb.jar" />
+    </item>
+
+</items>
