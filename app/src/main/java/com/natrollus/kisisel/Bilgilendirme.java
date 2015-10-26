@@ -43,7 +43,7 @@ public class Bilgilendirme extends Activity {
         if (aks.equals(Intent.ACTION_MAIN)) {
             Toast.makeText(this,"kisisel widget kurulali cok oldu..",Toast.LENGTH_LONG).show();
             finish();
-        } else if (aks.equals(Kisisel.ACTION_BILGI)) {
+        } else if (aks.equals(Kisisel.ACTION_ORTA)) {
             setContentView(R.layout.bilgilendirme);
             bilgilendirme = (TextView) findViewById(R.id.bilgilendirme);
             liste = (ListView) findViewById(R.id.liste);
