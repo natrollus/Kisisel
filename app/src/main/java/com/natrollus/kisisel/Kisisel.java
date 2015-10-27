@@ -61,7 +61,6 @@ public class Kisisel extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 			rv.setOnClickPendingIntent(butonlar[i],pi);
 		}
-
 	}
 	
 	public void sensorListe(Context context){
