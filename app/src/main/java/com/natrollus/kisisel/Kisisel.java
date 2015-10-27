@@ -1,16 +1,11 @@
 package com.natrollus.kisisel;
 
 import android.app.*;
-import android.os.*;
 import android.appwidget.*;
 import android.content.*;
 import android.widget.*;
 
-import java.text.SimpleDateFormat;
-import java.util.*;
-import android.hardware.*;
-
-import static com.natrollus.kisisel.Ortak.tarihGetir;
+import static com.natrollus.kisisel.araclar.Ortak.tarihGetir;
 
 public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";

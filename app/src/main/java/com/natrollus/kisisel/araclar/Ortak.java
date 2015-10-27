@@ -1,4 +1,4 @@
-package com.natrollus.kisisel;
+package com.natrollus.kisisel.araclar;
 
 import android.util.Log;
 
@@ -15,4 +15,5 @@ public class Ortak {
     public static String tarihGetir(String format){
         return new SimpleDateFormat(format).format(new Date());
     }
+
 }
