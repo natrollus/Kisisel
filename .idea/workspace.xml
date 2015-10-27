@@ -27,50 +27,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\gen\com\natrollus\kisisel\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\gen\com\natrollus\kisisel\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\Bilgilendirme$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\Bilgilendirme$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\Bilgilendirme$Listeleme.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\Bilgilendirme.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\Kisisel.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\classes\debug\com\natrollus\kisisel\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\dex\debug\classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\aidl\androidTest\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\incremental\mergeResources\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\manifests\full\debug\AndroidManifest.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\pre-dexed\debug\sdk-v1.0.0-c68a238496dd0ae71171fd01cd681c8349e72deb.jar" afterPath="" />
       <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\pre-dexed\debug\sensorextension_v1.1.0-01185795ed04d5dbe329cb5fee9c32802d5b3c9c.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\libs\sdk-v1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\libs\sensorextension_v1.1.0.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$Listeleme.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme$Listeleme.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Bilgilendirme.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Kisisel.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/Kisisel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/natrollus/kisisel/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\drawable\arkaplan.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\drawable\ikon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\layout\bilgilendirme.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\layout\kisisel.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\layout\liste_itemi.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\values\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\res\debug\xml\ayar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\app\build\outputs\logs\manifest-merger-debug-report.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\build\intermediates\dex-cache\cache.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\android\proje\Kisisel\build\intermediates\model_data.bin" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/natrollus/kisisel/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/natrollus/kisisel/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/natrollus/kisisel/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/natrollus/kisisel/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/arkaplan.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/arkaplan.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/xml/ayar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/xml/ayar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/bilgilendirme.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/bilgilendirme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/kisisel.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/kisisel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/liste_itemi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/liste_itemi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/androidTest/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/androidTest/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\android\proje\Kisisel\app\build\intermediates\manifests\androidTest\debug\AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
     </list>
     <ignored path="My Application.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,8 +130,8 @@
       <file leaf-file-name="Kisisel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0046656">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.4230171">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2109,6 +2104,13 @@
       <option name="number" value="Default" />
       <updated>1404820975431</updated>
     </task>
+    <task id="LOCAL-00001" summary="bu degisiklik hastane bilg. inden">
+      <created>1445960353164</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1445960353164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2160,6 +2162,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="bu degisiklik hastane bilg. inden" />
+    <option name="LAST_COMMIT_MESSAGE" value="bu degisiklik hastane bilg. inden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2602,8 +2609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0046656">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.4230171">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
