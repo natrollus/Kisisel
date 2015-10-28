@@ -26,11 +26,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.natrollus.kisisel" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="bu degisiklik hastane bilg. inden">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Baglanti.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
+    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\android\proje\Kisisel\app\src\main\java\com\natrollus\kisisel\Ortak.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Ortak.java" />
     </list>
     <ignored path="My Application.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,8 +116,8 @@
       <file leaf-file-name="Baglanti.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Baglanti.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47589424">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.15863141">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1250#1251#0" expanded="true" />
@@ -2156,7 +2153,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445960585856</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bu degisiklik hastane bilg. inden">
+      <created>1445977016872</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1445977016872</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2667,8 +2670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Baglanti.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47589424">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.15863141">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1250#1251#0" expanded="true" />
