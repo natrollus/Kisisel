@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.natrollus.kisisel" >
 
-    <uses-permission android:name="android.permission.BODY_SENSORS"/>
-    <uses-permission android:name="com.samsung.permission.SSENSOR_HRM_RAW_PPG"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -24,5 +23,6 @@
 			<meta-data android:name="android.appwidget.provider"
 				android:resource="@xml/ayar"/>
 		</receiver>
+        <service android:name=".gorunum.UzakGorunum" android:permission="android.permission.BIND_REMOTEVIEWS"/>
     </application>
 </manifest>

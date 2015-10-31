@@ -4,17 +4,7 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
     android:background="@drawable/arkaplan">
-	
-	<TextView
-		android:layout_height="26dp"
-		android:text="deneme"
-		android:textColor="#ffffff"
-		android:layout_width="wrap_content"
-        android:id="@+id/yazi"
-        android:textSize="13dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-	
+
 	<Button
 		android:layout_height="26dp"
 		android:text="orta"
@@ -39,5 +29,17 @@
 		android:textSize="11dp"
 		android:layout_toRightOf="@id/ortala"
 		android:layout_alignParentBottom="true" />
-	
+
+	<ListView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/liste_yazi"
+		android:layout_above="@+id/ortala"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:divider="@android:color/transparent" />
+
 </RelativeLayout>

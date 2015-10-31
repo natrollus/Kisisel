@@ -5,6 +5,12 @@ import android.appwidget.*;
 import android.content.*;
 import android.widget.*;
 
+import com.natrollus.kisisel.araclar.Baglanti;
+import com.natrollus.kisisel.gorunum.UzakGorunum;
+
+import java.util.concurrent.ExecutionException;
+
+import static com.natrollus.kisisel.araclar.Ortak.logla;
 import static com.natrollus.kisisel.araclar.Ortak.tarihGetir;
 
 public class Kisisel extends AppWidgetProvider {
@@ -34,7 +40,16 @@ public class Kisisel extends AppWidgetProvider {
 				s = "sag";
 				break;
 			case Kisisel.ACTION_ORTA:
-				s = "orta";
+				Baglanti baglanti = new Baglanti("http://natrollus.com","GET");
+				boolean baglandi = false;
+				try {
+				 	baglandi = baglanti.execute().get();
+				} catch (InterruptedException | ExecutionException e) {
+					s = e.toString();
+				}
+				if (baglandi){
+					s = baglanti.sonucYaz();
+				}
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "sol";
@@ -56,6 +71,9 @@ public class Kisisel extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 			rv.setOnClickPendingIntent(butonlar[i],pi);
 		}
+		Intent uzakservis = new Intent("uzak_aksiyon",null,context, UzakGorunum.class);
+		rv.setRemoteAdapter(R.id.liste_yazi,uzakservis);
+		tazele();
 	}
 	
 	public void sensorListe(Context context){
@@ -65,7 +83,7 @@ public class Kisisel extends AppWidgetProvider {
     }
 	
 	public void tazele(){
-		rv.setTextViewText(R.id.yazi,s);
+		//rv.setTextViewText(R.id.yazi,s);
 		awm.updateAppWidget(cn,rv);
 	}
 	
