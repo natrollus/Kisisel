@@ -15,13 +15,15 @@ public final class R {
         public static final int ikon=0x7f020001;
     }
     public static final class id {
-        public static final int altyazi=0x7f060006;
+        public static final int altyazi=0x7f060008;
         public static final int bilgilendirme=0x7f060001;
         public static final int liste=0x7f060002;
+        public static final int ortala=0x7f060004;
+        public static final int sagla=0x7f060006;
+        public static final int solla=0x7f060005;
         public static final int taban=0x7f060000;
-        public static final int ustyazi=0x7f060005;
-        public static final int yapbaam=0x7f060004;
-        public static final int yazbaam=0x7f060003;
+        public static final int ustyazi=0x7f060007;
+        public static final int yazi=0x7f060003;
     }
     public static final class layout {
         public static final int bilgilendirme=0x7f030000;

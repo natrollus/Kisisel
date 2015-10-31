@@ -1,5 +1,6 @@
 package com.natrollus.kisisel;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,17 +21,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.samsung.android.sdk.SsdkUnsupportedException;
-import com.samsung.android.sdk.sensorextension.*;
 
 import java.util.List;
 
 public class Bilgilendirme extends Activity {
     SensorManager sm;
-    SsensorManager ssm = null;
-    Ssensor ir=null,red=null;
-    SsensorExtension sse = null;
-    String s="",t="";
+    String s="";
     TextView bilgilendirme;
     ListView liste;
     List<Sensor> sensorler;
@@ -49,13 +45,14 @@ public class Bilgilendirme extends Activity {
             liste = (ListView) findViewById(R.id.liste);
             sm = (SensorManager) getSystemService("sensor");
             sensorler = sm.getSensorList(Sensor.TYPE_ALL);
-			Sensor hrm=null;
-			hrm = sm.getDefaultSensor(65562);
+			Sensor hrm = sm.getDefaultSensor(65562);
 			if(hrm!=null){
 				bilgilendirme.setText("deell");
 			} else {
-            	bilgilendirme.setText("boyut:"+sensorler.size()+" hrm:"+hrm.getName());
-			}
+                if (hrm != null) {
+                    bilgilendirme.setText("boyut:"+sensorler.size()+" hrm:"+hrm.getName());
+                }
+            }
             liste.setAdapter(new Listeleme());
             liste.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
