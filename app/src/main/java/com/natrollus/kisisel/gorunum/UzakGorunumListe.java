@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService.RemoteViewsFactory;
 
+import com.natrollus.kisisel.Degerler;
 import com.natrollus.kisisel.R;
 
 import static com.natrollus.kisisel.araclar.Ortak.logla;
@@ -22,7 +23,6 @@ public class UzakGorunumListe implements RemoteViewsFactory {
 
     @Override
     public void onCreate() {
-        logla("buralarda..");
 
     }
 
@@ -46,7 +46,8 @@ public class UzakGorunumListe implements RemoteViewsFactory {
         RemoteViews satir;
         satir = new RemoteViews(context.getPackageName(), R.layout.widget_liste_itemi);
         logla("i:"+intent.getStringExtra("deger"));
-        satir.setTextViewText(R.id.widget_liste_itemi_yazi,"selam");
+        logla("d:"+Degerler.url1);
+        satir.setTextViewText(R.id.widget_liste_itemi_yazi, Degerler.url1);
         return satir;
     }
 

@@ -17,6 +17,7 @@ public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";
 	public static final String ACTION_ORTA = "kisisel.action.ORTA";
 	public static final String ACTION_SOL = "kisisel.action.SOL";
+	Context context;
 	AppWidgetManager awm;
 	RemoteViews rv;
 	ComponentName cn;
@@ -26,11 +27,12 @@ public class Kisisel extends AppWidgetProvider {
 		awm = AppWidgetManager.getInstance(context);
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.kisisel);
+		this.context = context;
 	}
     @Override
     public void onReceive(Context context,Intent intent) {
 		init(context);
-		ayarla(context);
+		ayarla();
 		String action = intent.getAction();
 		switch (action) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
@@ -50,6 +52,8 @@ public class Kisisel extends AppWidgetProvider {
 				if (baglandi){
 					s = baglanti.sonucYaz();
 				}
+				Degerler.url1 = s;
+				listetazele();
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "sol";
@@ -63,7 +67,7 @@ public class Kisisel extends AppWidgetProvider {
 		tazele();
 	}
 	
-	public void ayarla(Context context){
+	public void ayarla(){
 		int[] butonlar = {R.id.sagla,R.id.ortala,R.id.solla};
 		String[] aksiyon = {Kisisel.ACTION_SAG,Kisisel.ACTION_ORTA,Kisisel.ACTION_SOL};
 		for (int i = 0; i < 3; i++) {
@@ -71,8 +75,12 @@ public class Kisisel extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 			rv.setOnClickPendingIntent(butonlar[i],pi);
 		}
+		listetazele();
+		tazele();
+	}
+
+	public void listetazele(){
 		Intent uzakservis = new Intent("uzak_aksiyon",null,context, UzakGorunum.class);
-		uzakservis.putExtra("deger","neymis");
 		rv.setRemoteAdapter(R.id.liste_yazi,uzakservis);
 		tazele();
 	}
