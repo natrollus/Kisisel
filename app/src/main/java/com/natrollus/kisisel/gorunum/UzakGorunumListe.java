@@ -9,9 +9,6 @@ import com.natrollus.kisisel.R;
 
 import static com.natrollus.kisisel.araclar.Ortak.logla;
 
-/**
- * Created by byram on 10/31/15.
- */
 public class UzakGorunumListe implements RemoteViewsFactory {
 
     Context context;
@@ -48,6 +45,7 @@ public class UzakGorunumListe implements RemoteViewsFactory {
     public RemoteViews getViewAt(int i) {
         RemoteViews satir;
         satir = new RemoteViews(context.getPackageName(), R.layout.widget_liste_itemi);
+        logla("i:"+intent.getStringExtra("deger"));
         satir.setTextViewText(R.id.widget_liste_itemi_yazi,"selam");
         return satir;
     }

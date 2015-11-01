@@ -72,6 +72,7 @@ public class Kisisel extends AppWidgetProvider {
 			rv.setOnClickPendingIntent(butonlar[i],pi);
 		}
 		Intent uzakservis = new Intent("uzak_aksiyon",null,context, UzakGorunum.class);
+		uzakservis.putExtra("deger","neymis");
 		rv.setRemoteAdapter(R.id.liste_yazi,uzakservis);
 		tazele();
 	}
