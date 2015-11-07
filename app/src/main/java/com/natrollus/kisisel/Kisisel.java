@@ -32,10 +32,10 @@ public class Kisisel extends AppWidgetProvider {
     @Override
     public void onReceive(Context context,Intent intent) {
 		init(context);
-		ayarla();
 		String action = intent.getAction();
 		switch (action) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
+				
 				s = "kuruldu";
 				break;
 			case Kisisel.ACTION_SAG:
@@ -52,8 +52,6 @@ public class Kisisel extends AppWidgetProvider {
 				if (baglandi){
 					s = baglanti.sonucYaz();
 				}
-				Degerler.url1 = s;
-				listetazele();
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "sol";
@@ -64,7 +62,7 @@ public class Kisisel extends AppWidgetProvider {
 			default:
 				break;
 		}
-		tazele();
+		listetazele(s);
 	}
 	
 	public void ayarla(){
@@ -75,13 +73,14 @@ public class Kisisel extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 			rv.setOnClickPendingIntent(butonlar[i],pi);
 		}
-		listetazele();
-		tazele();
+		listetazele("ilk");
 	}
 
-	public void listetazele(){
+	public void listetazele(String tasinacak){
 		Intent uzakservis = new Intent("uzak_aksiyon",null,context, UzakGorunum.class);
+		uzakservis.putExtra("tasiyici",tasinacak);
 		rv.setRemoteAdapter(R.id.liste_yazi,uzakservis);
+		awm.notifyAppWidgetViewDataChanged(awm.getAppWidgetIds(cn),R.id.liste_yazi);
 		tazele();
 	}
 	
@@ -94,9 +93,5 @@ public class Kisisel extends AppWidgetProvider {
 	public void tazele(){
 		//rv.setTextViewText(R.id.yazi,s);
 		awm.updateAppWidget(cn,rv);
-	}
-	
-	private String sonucGetir () {
-		return s;
 	}
 }
