@@ -3,9 +3,8 @@ package com.natrollus.kisisel.gorunum;
 import android.content.Intent;
 import android.widget.RemoteViewsService;
 
-/**
- * Created by byram on 10/31/15.
- */
+import static com.natrollus.kisisel.araclar.Ortak.logla;
+
 public class UzakGorunum extends RemoteViewsService {
     @Override
     public RemoteViewsFactory onGetViewFactory(Intent intent) {

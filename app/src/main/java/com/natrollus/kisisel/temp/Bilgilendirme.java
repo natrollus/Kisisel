@@ -1,4 +1,4 @@
-package com.natrollus.kisisel;
+package com.natrollus.kisisel.temp;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -21,6 +21,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+import com.natrollus.kisisel.Kisisel;
+import com.natrollus.kisisel.R;
 
 import java.util.List;
 
