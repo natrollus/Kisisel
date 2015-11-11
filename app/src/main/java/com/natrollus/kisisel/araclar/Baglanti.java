@@ -39,10 +39,9 @@ public class Baglanti extends AsyncTask<String,String,Boolean>{
         return sonuc;
     }
 
-    public boolean sonuc(){
+    public boolean sonuc() {
         return baglandi;
     }
-
 
     @Override
     protected Boolean doInBackground(String... strings) {

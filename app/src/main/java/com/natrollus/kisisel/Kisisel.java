@@ -21,6 +21,8 @@ public class Kisisel extends AppWidgetProvider {
 	public static final String ACTION_ORTA = "kisisel.action.ORTA";
 	public static final String ACTION_SOL = "kisisel.action.SOL";
 	public static final String ACTION_RESIZE = "com.sec.android.widgetapp.APPWIDGET_RESIZE";
+	public static final String ACTION_AKTIVITE = "kisisel.action.AKTIVITE";
+	SharedPreferences kayitlar;
 	Context context;
 	AppWidgetManager awm;
 	RemoteViews rv;
@@ -31,6 +33,7 @@ public class Kisisel extends AppWidgetProvider {
 		awm = AppWidgetManager.getInstance(context);
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.kisisel);
+		kayitlar = context.getSharedPreferences("notlar",Context.MODE_PRIVATE);
 		this.context = context;
 		setDegisken(s);
 		ayarla();
@@ -41,6 +44,12 @@ public class Kisisel extends AppWidgetProvider {
 		switch (action) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
 				s = "kuruldu";
+				break;
+			case AppWidgetManager.ACTION_APPWIDGET_OPTIONS_CHANGED:
+				s = "opt";
+				break;
+			case AppWidgetManager.ACTION_APPWIDGET_UPDATE:
+				s = tarihGetir("HH:mm:ss") + " de guncellendi..";
 				break;
 			case Kisisel.ACTION_SAG:
 				s = "selam mehmet";
@@ -57,8 +66,12 @@ public class Kisisel extends AppWidgetProvider {
 			case Kisisel.ACTION_RESIZE:
 				s = "resize";
 				break;
-			case AppWidgetManager.ACTION_APPWIDGET_UPDATE:
-				s = tarihGetir("HH:mm:ss") + " de guncellendi..";
+			case Kisisel.ACTION_AKTIVITE:
+				String islem = intent.getStringExtra("islem");
+				logla("islem:"+islem);
+				if (islem.equals("not")){
+					s = kayitlar.getString("not",null);
+				}
 				break;
 			default:
 				s = action;
@@ -101,7 +114,6 @@ public class Kisisel extends AppWidgetProvider {
 	}
 
 	public void tazele(){
-		//rv.setTextViewText(R.id.yazi,s);
 		awm.updateAppWidget(cn, rv);
 	}
 	
