@@ -8,6 +8,7 @@ import android.widget.*;
 import com.natrollus.kisisel.araclar.Baglanti;
 import com.natrollus.kisisel.gorunum.UzakGorunum;
 import com.natrollus.kisisel.gorunum.UzakStatic;
+import com.natrollus.kisisel.aktivite.Not;
 
 import java.util.concurrent.ExecutionException;
 
@@ -42,13 +43,16 @@ public class Kisisel extends AppWidgetProvider {
 				s = "kuruldu";
 				break;
 			case Kisisel.ACTION_SAG:
-				s = "sag";
+				s = "selam mehmet";
 				break;
 			case Kisisel.ACTION_ORTA:
 				s = baglan("http://natrollus.com","GET");
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "sol";
+				Intent i = new Intent(context,Not.class);
+				i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				context.startActivity(i);
 				break;
 			case Kisisel.ACTION_RESIZE:
 				s = "resize";

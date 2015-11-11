@@ -14,6 +14,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+		<activity android:name=".aktivite.Not"/>
 		<receiver android:name=".Kisisel">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
