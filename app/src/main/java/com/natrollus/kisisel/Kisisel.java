@@ -31,51 +31,51 @@ public class Kisisel extends AppWidgetProvider {
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.kisisel);
 		this.context = context;
+		setDegisken(s);
+		ayarla();
 	}
     @Override
     public void onReceive(Context context,Intent intent) {
-		init(context);
 		String action = intent.getAction();
 		switch (action) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
-				ayarla();
 				s = "kuruldu";
 				break;
 			case Kisisel.ACTION_SAG:
 				s = "sag";
 				break;
 			case Kisisel.ACTION_ORTA:
-				baglan("http://natrollus.com","GET");
+				s = baglan("http://natrollus.com","GET");
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "sol";
 				break;
 			case Kisisel.ACTION_RESIZE:
-
+				s = "resize";
 				break;
 			case AppWidgetManager.ACTION_APPWIDGET_UPDATE:
 				s = tarihGetir("HH:mm:ss") + " de guncellendi..";
-				ayarla();
 				break;
 			default:
-				logla("aks:"+action);
+				s = action;
 				break;
 		}
-		setDegisken(s);
-		listetazele();
+		init(context);
 	}
 
-	private void baglan(String url, String metod) {
+	private String baglan(String url, String metod) {
 		Baglanti baglanti = new Baglanti(url,metod);
 		boolean baglandi = false;
+		String sonuc = "";
 		try {
 			baglandi = baglanti.execute().get();
 		} catch (InterruptedException | ExecutionException e) {
-			s = e.toString();
+			sonuc = e.toString();
 		}
 		if (baglandi){
-			s = baglanti.sonucYaz();
+			sonuc = baglanti.sonucYaz();
 		}
+		return sonuc;
 	}
 
 	public void ayarla(){
@@ -86,10 +86,10 @@ public class Kisisel extends AppWidgetProvider {
 			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 			rv.setOnClickPendingIntent(butonlar[i], pi);
 		}
-		listetazele();
+		listeyap();
 	}
 
-	public void listetazele(){
+	public void listeyap(){
 		Intent uzakservis = new Intent("uzak_aksiyon",null,context, UzakGorunum.class);
 		awm.notifyAppWidgetViewDataChanged(awm.getAppWidgetIds(cn), R.id.liste_yazi);
 		rv.setRemoteAdapter(R.id.liste_yazi, uzakservis);
