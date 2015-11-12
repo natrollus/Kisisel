@@ -8,22 +8,21 @@
         android:allowBackup="true"
         android:icon="@drawable/ikon"
         android:label="@string/app_name">
-        <activity android:name=".temp.Bilgilendirme" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".diger.Bilgilendirme" android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-		<activity android:name=".aktivite.Not" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 		<receiver android:name=".Kisisel">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-				<action android:name="kisisel.action.DUGME"/>
-				<action android:name="kisisel.action.TEST"/>
+				<action android:name="kisisel.action.UZAK_SAG_SECIM"/>
+				<action android:name="kisisel.action.UZAK_SOL_CERCEVE"/>
 			</intent-filter>
-			<meta-data android:name="android.appwidget.provider"
-				android:resource="@xml/ayar"/>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/ayar"/>
 		</receiver>
+        <receiver android:name=".araclar.Tasiyici"/>
         <service android:name=".gorunum.UzakGorunum" android:permission="android.permission.BIND_REMOTEVIEWS"/>
     </application>
 </manifest>

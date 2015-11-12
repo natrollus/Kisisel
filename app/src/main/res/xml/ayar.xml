@@ -2,5 +2,5 @@
 	android:minWidth="250dip"
 	android:minHeight="50dip"
 	android:updatePeriodMillis="0"
-	android:initialLayout="@layout/kisisel"
+	android:initialLayout="@layout/ana_alet_zemini"
 	/>
