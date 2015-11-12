@@ -15,6 +15,7 @@ import java.util.concurrent.ExecutionException;
 import static com.natrollus.kisisel.araclar.Ortak.logla;
 import static com.natrollus.kisisel.araclar.Ortak.tarihGetir;
 import static com.natrollus.kisisel.gorunum.UzakStatic.setDegisken;
+import org.json.*;
 
 public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";
@@ -55,7 +56,18 @@ public class Kisisel extends AppWidgetProvider {
 				s = kayitlar.getString("not",null);
 				break;
 			case Kisisel.ACTION_ORTA:
-				s = baglan("http://natrollus.com","GET");
+				String url = "http://btc-e.com/api/2/btc_usd/ticker";
+				String gelen = baglan(url, "GET");
+				JSONObject jo=null;
+				String sonuc="olmadi";
+				try {
+					jo = new JSONObject(baglan(url, "GET"));
+					if(jo!=null){
+						sonuc = jo.getJSONObject("ticker") + "";
+						//sonuc = jo.getJSONObject("ticker").getString("last");
+					}
+				} catch (JSONException e) {s = e.toString();}
+				s = sonuc + jo +"";
 				break;
 			case Kisisel.ACTION_SOL:
 				s = "kaydetmek icin bisiler yaz baam..";

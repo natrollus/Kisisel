@@ -34,7 +34,8 @@
 		</activity>
 
 		<activity
-			android:name=".aktivite.Not"/>
+			android:name=".aktivite.Not"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
 		<receiver
 			android:name=".Kisisel">
