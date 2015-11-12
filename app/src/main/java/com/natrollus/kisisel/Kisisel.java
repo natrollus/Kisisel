@@ -20,8 +20,8 @@ public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";
 	public static final String ACTION_ORTA = "kisisel.action.ORTA";
 	public static final String ACTION_SOL = "kisisel.action.SOL";
-	public static final String ACTION_RESIZE = "com.sec.android.widgetapp.APPWIDGET_RESIZE";
 	public static final String ACTION_AKTIVITE = "kisisel.action.AKTIVITE";
+	public static final String ACTION_RESIZE = "com.sec.android.widgetapp.APPWIDGET_RESIZE";
 	SharedPreferences kayitlar;
 	Context context;
 	AppWidgetManager awm;
@@ -33,13 +33,13 @@ public class Kisisel extends AppWidgetProvider {
 		awm = AppWidgetManager.getInstance(context);
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.kisisel);
-		kayitlar = context.getSharedPreferences("notlar",Context.MODE_PRIVATE);
 		this.context = context;
 		setDegisken(s);
 		ayarla();
 	}
     @Override
     public void onReceive(Context context,Intent intent) {
+		kayitlar = context.getSharedPreferences("notlar",Context.MODE_PRIVATE);
 		String action = intent.getAction();
 		switch (action) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
@@ -52,13 +52,13 @@ public class Kisisel extends AppWidgetProvider {
 				s = tarihGetir("HH:mm:ss") + " de guncellendi..";
 				break;
 			case Kisisel.ACTION_SAG:
-				s = "selam mehmet";
+				s = kayitlar.getString("not",null);
 				break;
 			case Kisisel.ACTION_ORTA:
 				s = baglan("http://natrollus.com","GET");
 				break;
 			case Kisisel.ACTION_SOL:
-				s = "sol";
+				s = "kaydetmek icin bisiler yaz baam..";
 				Intent i = new Intent(context,Not.class);
 				i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				context.startActivity(i);
@@ -69,6 +69,7 @@ public class Kisisel extends AppWidgetProvider {
 			case Kisisel.ACTION_AKTIVITE:
 				String islem = intent.getStringExtra("islem");
 				logla("islem:"+islem);
+				logla("kayitlar:"+kayitlar);
 				if (islem.equals("not")){
 					s = kayitlar.getString("not",null);
 				}

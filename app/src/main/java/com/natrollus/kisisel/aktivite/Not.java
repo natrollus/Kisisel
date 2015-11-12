@@ -51,6 +51,7 @@ public class Not extends Activity {
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
+		kaydet();
 		finish();
 	}
 }
