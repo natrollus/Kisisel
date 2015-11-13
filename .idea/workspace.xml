@@ -35,26 +35,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.natrollus.kisisel" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler..">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakStatic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/bilgilendirme.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/liste_itemi.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/zimbirti.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/temp/Bilgilendirme.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/widget_liste_itemi.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sag_secim_liste_itemi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arkaplan.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/arkaplan.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/xml/ayar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/ayar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/kisisel.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My Application.iws" />
@@ -2228,7 +2210,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446285098860</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler..">
+      <created>1447367530426</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1447367530426</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
