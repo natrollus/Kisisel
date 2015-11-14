@@ -36,9 +36,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler..">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/layout/bilgilendirme.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/layout/liste_itemi.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sol_cerceve_liste_itemi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My Application.iws" />
@@ -2247,7 +2244,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447506855718</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler..">
+      <created>1447506959305</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1447506959305</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
