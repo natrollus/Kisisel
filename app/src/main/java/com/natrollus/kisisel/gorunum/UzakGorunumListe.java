@@ -11,24 +11,22 @@ import com.natrollus.kisisel.araclar.Tasiyici;
 
 import static com.natrollus.kisisel.araclar.Ortak.logla;
 import static com.natrollus.kisisel.araclar.Tasiyici.getBilgi;
+import static com.natrollus.kisisel.araclar.Tasiyici.getSag;
 
 public class UzakGorunumListe implements RemoteViewsFactory {
 
     Context context;
     Intent intent;
     RemoteViews satir;
+    String paketIsmi = null;
     String aksiyon = null;
 	
 
     public UzakGorunumListe(Context context, Intent intent) {
         this.context = context;
+        this.paketIsmi = context.getPackageName();
         this.intent = intent;
         this.aksiyon = intent.getAction();
-        if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
-            this.satir = new RemoteViews(context.getPackageName(), R.layout.sag_secim_liste_itemi);
-        } else if (aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) {
-            this.satir = new RemoteViews(context.getPackageName(),R.layout.sol_cerceve_liste_itemi);
-        }
     }
 
 
@@ -39,9 +37,9 @@ public class UzakGorunumListe implements RemoteViewsFactory {
     @Override
     public void onDataSetChanged() {
 		if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
-            logla("data degisti sag:"+ getBilgi());
+            logla("sag data degisti:" + getBilgi());
         } else if (aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) {
-            logla("data degisti sol");
+            logla("sol data degisti:" + getSag());
         }
     }
 
@@ -61,16 +59,37 @@ public class UzakGorunumListe implements RemoteViewsFactory {
 
     @Override
     public RemoteViews getViewAt(int pos) {
+        satir = null;
         if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
-            satir.setTextViewText(R.id.sag_secim_liste_itemi_yazi, Tasiyici.SAG_SECIM_LISTE_BASLIKLARI[pos]);
+            satir = new RemoteViews(paketIsmi, R.layout.sag_li);
+            satir.setTextViewText(R.id.sag_li_yazi, Tasiyici.SAG_SECIM_LISTE_BASLIKLARI[pos]);
             Intent doldur = new Intent(intent.getAction());
             doldur.putExtra(Tasiyici.SAGDAN, Tasiyici.SAG_SECIM_LISTE_BASLIKLARI[pos]);
-            satir.setOnClickFillInIntent(R.id.sag_secim_liste_itemi_taban,doldur);
+            satir.setOnClickFillInIntent(R.id.sag_li_taban, doldur);
         } else if (aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) {
-            satir.setTextViewText(R.id.sol_cerceve_liste_itemi_yazi, "simdilik");
-            Intent doldur = new Intent(intent.getAction());
-            doldur.putExtra(Tasiyici.SOLDAN,"soldan..");
-            satir.setOnClickFillInIntent(R.id.sol_cerceve_liste_itemi_taban, doldur);
+            String sag = getSag();
+            switch (sag) {
+                case "anna":
+                    satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
+                    satir.setTextViewText(R.id.sol_li_normal_yazi, getBilgi());
+                    Intent doldur = new Intent(intent.getAction());
+                    doldur.putExtra(Tasiyici.SOLDAN, "soldan..");
+                    satir.setOnClickFillInIntent(R.id.sol_li_normal_taban, doldur);
+                    break;
+                case "acil":
+                    satir = new RemoteViews(paketIsmi, R.layout.sol_li_acil);
+                    satir.setTextViewText(R.id.sol_li_acil_yazi, paketIsmi);
+                    break;
+                case "yaz":
+                    satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
+                    satir.setTextViewText(R.id.sol_li_normal_yazi, "yazdan yaz buda:" + sag);
+                    break;
+                default:
+                    satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
+                    satir.setTextViewText(R.id.sol_li_normal_yazi, "sag nedir:" + sag);
+                    break;
+            }
+
         }
         return satir;
     }
@@ -82,7 +101,7 @@ public class UzakGorunumListe implements RemoteViewsFactory {
 
     @Override
     public int getViewTypeCount() {
-        return 1;
+        return 2;
     }
 
     @Override

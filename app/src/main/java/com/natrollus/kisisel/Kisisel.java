@@ -8,13 +8,14 @@ import android.widget.*;
 import com.natrollus.kisisel.araclar.Baglanti;
 import com.natrollus.kisisel.araclar.Tasiyici;
 import com.natrollus.kisisel.gorunum.UzakGorunum;
+import com.natrollus.kisisel.gorunum.UzakGorunumListe;
 
 import java.util.concurrent.ExecutionException;
 
-import static com.natrollus.kisisel.araclar.Tasiyici.ORTADAN;
 import static com.natrollus.kisisel.araclar.Tasiyici.setBilgi;
 import static com.natrollus.kisisel.araclar.Ortak.logla;
 import static com.natrollus.kisisel.araclar.Ortak.tarihGetir;
+import static com.natrollus.kisisel.araclar.Tasiyici.setSag;
 
 public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";
@@ -29,14 +30,15 @@ public class Kisisel extends AppWidgetProvider {
 	AppWidgetManager awm;
 	RemoteViews rv;
 	ComponentName cn;
-	String s="",o="";
+	String s="",o="ana";
 
 	public void init(Context context){
 		awm = AppWidgetManager.getInstance(context);
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.ana_alet_zemini);
 		this.context = context;
-        setBilgi(s);
+		setBilgi(s);
+		setSag(o);
         ayarla();
 	}
     @Override
@@ -66,8 +68,7 @@ public class Kisisel extends AppWidgetProvider {
                 s = "yerinden cikti..";
 				break;
             case Kisisel.ACTION_UZAK_SAG:
-                s = intent.getStringExtra(Tasiyici.SAGDAN);
-                logla("sagdan son:"+s);
+                o = intent.getStringExtra(Tasiyici.SAGDAN);
                 break;
             case Kisisel.ACTION_UZAK_SOL:
                 logla("burda solda sonlandi..");
@@ -82,6 +83,7 @@ public class Kisisel extends AppWidgetProvider {
 				logla("aks:"+aksiyon);
                 break;
 		}
+		logla("o:"+o);
         init(context);
     }
 
@@ -99,33 +101,25 @@ public class Kisisel extends AppWidgetProvider {
 	}
 
 	public void ayarla(){
-		//int[] butonlar = {R.id.sagla,R.id.ortala,R.id.solla};
-		String[] aksiyon = {Kisisel.ACTION_SAG,Kisisel.ACTION_URL,Kisisel.ACTION_NOT};
-		for (int i = 0; i < 3; i++) {
-			Intent intent = new Intent(aksiyon[i],null,context,getClass());
-			PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
-			//rv.setOnClickPendingIntent(butonlar[i], pi);
-		}
-		listeayarla(o);
+		listeayarla();
 	}
 
-	public void listeayarla(String data){
-        Intent uzak_sol_cerceve = new Intent(Kisisel.ACTION_UZAK_SOL,null,context, UzakGorunum.class);
+	public void listeayarla(){
         Intent uzak_sag_secim = new Intent(Kisisel.ACTION_UZAK_SAG,null,context, UzakGorunum.class);
-		//awm.notifyAppWidgetViewDataChanged(awm.getAppWidgetIds(cn), R.id.sol_cerceve);
+		Intent uzak_sol_cerceve = new Intent(Kisisel.ACTION_UZAK_SOL,null,context, UzakGorunum.class);
 
+		awm.notifyAppWidgetViewDataChanged(awm.getAppWidgetIds(cn), R.id.sol_cerceve);
+
+		rv.setRemoteAdapter(R.id.sag_secim_bolgesi, uzak_sag_secim);
         rv.setRemoteAdapter(R.id.sol_cerceve, uzak_sol_cerceve);
-        rv.setRemoteAdapter(R.id.sag_secim_bolgesi, uzak_sag_secim);
         Intent tasiyici = new Intent(context, Tasiyici.class);
-        tasiyici.putExtra(ORTADAN,data);
         PendingIntent bekleyenTasiyici = PendingIntent.getBroadcast(context,0,tasiyici,PendingIntent.FLAG_UPDATE_CURRENT);
-        rv.setPendingIntentTemplate(R.id.sol_cerceve,bekleyenTasiyici);
+        //rv.setPendingIntentTemplate(R.id.sol_cerceve,bekleyenTasiyici);
         rv.setPendingIntentTemplate(R.id.sag_secim_bolgesi,bekleyenTasiyici);
 		tazele();
 	}
 
 	public void tazele(){
-		//rv.setTextViewText(R.id.yazi,s);
 		awm.updateAppWidget(cn, rv);
 	}
 	
