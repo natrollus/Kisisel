@@ -15,13 +15,13 @@ public final class R {
         public static final int ikon=0x7f020001;
     }
     public static final class id {
-        public static final int button=0x7f060008;
         public static final int girdi=0x7f060000;
         public static final int kaydet=0x7f060001;
         public static final int sag_li_taban=0x7f060004;
         public static final int sag_li_yazi=0x7f060005;
         public static final int sag_secim_bolgesi=0x7f060003;
         public static final int sol_cerceve=0x7f060002;
+        public static final int sol_li_acil_buton=0x7f060008;
         public static final int sol_li_acil_taban=0x7f060006;
         public static final int sol_li_acil_yazi=0x7f060007;
         public static final int sol_li_normal_taban=0x7f060009;

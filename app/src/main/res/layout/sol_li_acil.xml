@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:text="ac"
-        android:id="@+id/button"
+        android:id="@+id/sol_li_acil_buton"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

@@ -63,22 +63,26 @@ public class UzakGorunumListe implements RemoteViewsFactory {
         if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
             satir = new RemoteViews(paketIsmi, R.layout.sag_li);
             satir.setTextViewText(R.id.sag_li_yazi, Tasiyici.SAG_SECIM_LISTE_BASLIKLARI[pos]);
+            logla("aksiyon:"+intent.getAction());
             Intent doldur = new Intent(intent.getAction());
             doldur.putExtra(Tasiyici.SAGDAN, Tasiyici.SAG_SECIM_LISTE_BASLIKLARI[pos]);
             satir.setOnClickFillInIntent(R.id.sag_li_taban, doldur);
         } else if (aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) {
             String sag = getSag();
             switch (sag) {
-                case "anna":
+                case "ana":
                     satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
                     satir.setTextViewText(R.id.sol_li_normal_yazi, getBilgi());
-                    Intent doldur = new Intent(intent.getAction());
-                    doldur.putExtra(Tasiyici.SOLDAN, "soldan..");
-                    satir.setOnClickFillInIntent(R.id.sol_li_normal_taban, doldur);
+                    Intent ana = new Intent(intent.getAction());
+                    ana.putExtra(Tasiyici.SOLDAN, "soldan..");
+                    satir.setOnClickFillInIntent(R.id.sol_li_normal_taban, ana);
                     break;
                 case "acil":
                     satir = new RemoteViews(paketIsmi, R.layout.sol_li_acil);
                     satir.setTextViewText(R.id.sol_li_acil_yazi, paketIsmi);
+                    Intent acil = new Intent(intent.getAction());
+                    acil.putExtra(Tasiyici.SOLDAN,"acil sag");
+                    satir.setOnClickFillInIntent(R.id.sol_li_acil_buton,acil);
                     break;
                 case "yaz":
                     satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);

@@ -68,10 +68,11 @@ public class Kisisel extends AppWidgetProvider {
                 s = "yerinden cikti..";
 				break;
             case Kisisel.ACTION_UZAK_SAG:
-                o = intent.getStringExtra(Tasiyici.SAGDAN);
+                String sag = intent.getStringExtra(Tasiyici.SAGDAN);
                 break;
             case Kisisel.ACTION_UZAK_SOL:
-                logla("burda solda sonlandi..");
+				String sol = intent.getStringExtra(Tasiyici.SOLDAN);
+				o = sol;
                 break;
             case Kisisel.ACTION_AKTIVITE:
                 String islem = intent.getStringExtra("islem");
@@ -114,7 +115,7 @@ public class Kisisel extends AppWidgetProvider {
         rv.setRemoteAdapter(R.id.sol_cerceve, uzak_sol_cerceve);
         Intent tasiyici = new Intent(context, Tasiyici.class);
         PendingIntent bekleyenTasiyici = PendingIntent.getBroadcast(context,0,tasiyici,PendingIntent.FLAG_UPDATE_CURRENT);
-        //rv.setPendingIntentTemplate(R.id.sol_cerceve,bekleyenTasiyici);
+        rv.setPendingIntentTemplate(R.id.sol_cerceve,bekleyenTasiyici);
         rv.setPendingIntentTemplate(R.id.sag_secim_bolgesi,bekleyenTasiyici);
 		tazele();
 	}
