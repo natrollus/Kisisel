@@ -35,6 +35,7 @@ public class Tasiyici extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Intent gecis = new Intent(intent.getAction());
+        logla("gecis nedir:"+intent.getAction());
         if (intent.getAction().equals(Kisisel.ACTION_UZAK_SAG)){
             gecis.putExtra(SAGDAN,intent.getStringExtra(SAGDAN));
         } else if (intent.getAction().equals(Kisisel.ACTION_UZAK_SOL)){

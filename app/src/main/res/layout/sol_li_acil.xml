@@ -8,10 +8,11 @@
         android:layout_height="wrap_content"
         android:text="test bu la..."
         android:id="@+id/sol_li_acil_yazi"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"

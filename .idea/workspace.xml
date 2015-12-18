@@ -40,15 +40,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.natrollus.kisisel" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="sol cerceveden geri bildirim yapildi..">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/natrollus/kisisel/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/natrollus/kisisel/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/natrollus/kisisel/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/natrollus/kisisel/BuildConfig.java" />
+    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -101,99 +102,70 @@
     <favorites_list name="My Application" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4609619">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Bilgilendirme.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Kisisel.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33333334">
-                  <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Tasiyici.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ana_alet_zemini.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ana_alet_zemini.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sol_li_acil.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml">
-              <provider selected="true" editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sol_li_normal.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_normal.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="UzakGorunumListe.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3785822">
-                  <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Bilgilendirme.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5">
+              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+              <folding>
+                <element signature="method#onCreate#0;class#Bilgilendirme#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UzakGorunumListe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="79" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
+              <folding>
+                <element signature="method#UzakGorunumListe#0;class#UzakGorunumListe#0" expanded="true" />
+                <element signature="method#onCreate#0;class#UzakGorunumListe#0" expanded="true" />
+                <element signature="method#onDataSetChanged#0;class#UzakGorunumListe#0" expanded="true" />
+                <element signature="method#onDestroy#0;class#UzakGorunumListe#0" expanded="true" />
+                <element signature="method#getCount#0;class#UzakGorunumListe#0" expanded="true" />
+                <element signature="e#3883#3884#0" expanded="true" />
+                <element signature="e#3910#3911#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tasiyici.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UzakGorunum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -247,56 +219,6 @@
         <entry key="$PROJECT_DIR$">
           <value>
             <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'Kisisel'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'Kisisel'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'Kisisel'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'Kisisel'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'Kisisel'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'Kisisel'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'Kisisel' (some of the displayed tasks may belong to subprojects)." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -933,11 +855,6 @@
                 <option name="name" value="compileReleaseUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="connectedAndroidTest" />
@@ -951,16 +868,6 @@
                 <option name="description" value="Installs and runs the tests for debug on connected devices." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="connectedDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
@@ -1045,11 +952,6 @@
                 <option name="name" value="generateReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="installDebug" />
@@ -1115,11 +1017,6 @@
                 <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mockableAndroidJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1234,16 +1131,6 @@
                 <option name="name" value="processReleaseUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the signing info for each variant." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="signingReport" />
@@ -1252,11 +1139,6 @@
                 <option name="description" value="Prints out all the source sets defined in this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="sourceSets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
@@ -1309,7 +1191,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="4339905434000" />
-        <entry key="D:\android\proje\Kisisel" value="4342517431945" />
+        <entry key="D:\android\proje\Kisisel" value="4337869165348" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1579,119 +1461,6 @@
               <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/announce" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/antlr" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/base-services-groovy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-comparison" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/build-init" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/cli" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/code-quality" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/core" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/dependency-management" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/diagnostics" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ear" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ide-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-integ-testing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/internal-testing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ivy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jacoco" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/javascript" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/jetty" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-groovy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-java" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-jvm" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/language-scala" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/launcher" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/maven" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/messaging" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-core" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/model-groovy" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/open-api" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/osgi" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-base" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-jvm" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/platform-play" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-development" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugin-use" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/plugins" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/publish" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/reporting" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-http" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-s3" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/resources-sftp" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/scala" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/signing" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/sonar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/test-kit" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/testing-native" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/tooling-api-builders" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/ui" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/wrapper" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/ant-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-base-services-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-base-services-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-cli-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-core-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-docs-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-launcher-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-messaging-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-core-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-model-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-open-api-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-resources-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-tooling-api-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-ui-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/gradle-wrapper-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/groovy-all-2.4.4.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-announce-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-antlr-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-comparison-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-build-init-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-code-quality-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-dependency-management-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-diagnostics-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ear-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ide-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-ivy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jacoco-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-javascript-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-jetty-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-groovy-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-java-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-jvm-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-language-scala-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-maven-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-osgi-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-base-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-jvm-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-platform-play-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-development-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugin-use-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-plugins-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-publish-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-reporting-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-http-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-s3-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-resources-sftp-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-scala-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-signing-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-sonar-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-test-kit-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1717,17 +1486,17 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sag_secim_liste_itemi.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/arkaplan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sol_cerceve_liste_itemi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/ana_alet_zemini.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sag_acil.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sol_acil.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sag_li.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sol_li_normal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java" />
       </list>
     </option>
   </component>
@@ -1742,10 +1511,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1819,6 +1586,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -2137,26 +1924,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2179,7 +1946,6 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/sensorextension_v1.1.0.jar" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_GalaxyNexus_ToolsForApacheCordova" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2430,31 +2196,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23136818" sideWeight="0.53571427" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3325062" sideWeight="0.85264665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25361514" sideWeight="0.804371" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23136818" sideWeight="0.4642857" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23200993" sideWeight="0.46852645" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14658849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27363738" sideWeight="0.14605543" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3325062" sideWeight="0.14735337" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="91" y="91" width="1258" height="670" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2487,12 +2253,11 @@
     <MESSAGE value="bu degisilk doktor odasindan" />
     <MESSAGE value="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler.." />
     <MESSAGE value="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la" />
-    <MESSAGE value="sol cerceveden geri bildirim yapildi.." />
-    <option name="LAST_COMMIT_MESSAGE" value="sol cerceveden geri bildirim yapildi.." />
+    <option name="LAST_COMMIT_MESSAGE" value="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2503,6 +2268,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2511,7 +2279,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="method#UzakGorunumListe#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onCreate#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onDataSetChanged#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onDestroy#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#getCount#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3910#3911#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2519,6 +2295,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2550,6 +2327,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2582,6 +2362,9 @@
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2614,6 +2397,9 @@
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2646,6 +2432,9 @@
           <caret line="48" column="40" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2764,21 +2553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2647059">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/arkaplan.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0882353">
@@ -2805,6 +2579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2647059">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2816,64 +2591,72 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sag_li.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09355509">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_not.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_not.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_normal.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ana_alet_zemini.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ana_alet_zemini.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.21829522">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_acil.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sol_li_normal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43659043">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunum.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -2881,7 +2664,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2890,18 +2673,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3785822">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="79" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
+          <folding>
+            <element signature="method#UzakGorunumListe#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onCreate#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onDataSetChanged#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#onDestroy#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="method#getCount#0;class#UzakGorunumListe#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3910#3911#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.5882353">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#onReceive#0;class#Kisisel#0" expanded="true" />
+            <element signature="method#baglan#0;class#Kisisel#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/diger/Bilgilendirme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="method#onCreate#0;class#Bilgilendirme#0" expanded="true" />
           </folding>
         </state>
       </provider>

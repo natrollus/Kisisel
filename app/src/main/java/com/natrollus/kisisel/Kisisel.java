@@ -68,11 +68,10 @@ public class Kisisel extends AppWidgetProvider {
                 s = "yerinden cikti..";
 				break;
             case Kisisel.ACTION_UZAK_SAG:
-                String sag = intent.getStringExtra(Tasiyici.SAGDAN);
+                o = intent.getStringExtra(Tasiyici.SAGDAN);
                 break;
             case Kisisel.ACTION_UZAK_SOL:
-				String sol = intent.getStringExtra(Tasiyici.SOLDAN);
-				o = sol;
+                logla("sol sonuc:"+intent.getStringExtra(Tasiyici.SOLDAN));
                 break;
             case Kisisel.ACTION_AKTIVITE:
                 String islem = intent.getStringExtra("islem");
