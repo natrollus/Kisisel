@@ -40,20 +40,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.natrollus.kisisel" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/servis/gorunum/UzakServis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sol_li_salon.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/gorunum/UzakGorunumListe.java" afterPath="" />
+    <list default="true" id="166219c6-4f11-496a-be3d-d9ffc94c9808" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/Kisisel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/natrollus/kisisel/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/natrollus/kisisel/araclar/Tasiyici.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My Application.iws" />
@@ -2008,19 +1999,25 @@
       <option name="project" value="LOCAL" />
       <updated>1447960565569</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="salon kismi kendini solda gösterip ikonlarin ne halt yedigi anlasilabiliyo,la sende laf olsun diye buraya yaziyon ha">
+      <created>1454334467240</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1454334467240</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30148885" sideWeight="0.8505007" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30148885" sideWeight="0.8505007" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2069,7 +2066,8 @@
     <MESSAGE value="bu degisilk doktor odasindan" />
     <MESSAGE value="tasiyici&#10;sol sag cerceve olayi ve bilimum degisiklikler.." />
     <MESSAGE value="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la" />
-    <option name="LAST_COMMIT_MESSAGE" value="sol cerceve uzak görünümleri sag listeye göre degistirme opsiyonu getviewtype sayisini arttirmayla alakaliymisya la" />
+    <MESSAGE value="salon kismi kendini solda gösterip ikonlarin ne halt yedigi anlasilabiliyo,la sende laf olsun diye buraya yaziyon ha" />
+    <option name="LAST_COMMIT_MESSAGE" value="salon kismi kendini solda gösterip ikonlarin ne halt yedigi anlasilabiliyo,la sende laf olsun diye buraya yaziyon ha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
