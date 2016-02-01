@@ -8,6 +8,7 @@ import android.widget.*;
 import com.natrollus.kisisel.araclar.Baglanti;
 import com.natrollus.kisisel.araclar.Tasiyici;
 import com.natrollus.kisisel.servis.gorunum.UzakServis;
+import com.natrollus.kisisel.servis.guncelleme.Guncelle;
 
 import java.util.concurrent.ExecutionException;
 
@@ -20,6 +21,7 @@ public class Kisisel extends AppWidgetProvider {
     public static final String ACTION_SAG = "kisisel.action.SAG";
 	public static final String ACTION_URL = "kisisel.action.URL";
 	public static final String ACTION_NOT = "kisisel.action.SOL";
+	public static final String ACTION_GUNCELLE = "kisisel.action.GUNCELLE";
     public static final String ACTION_AKTIVITE = "kisisel.action.AKTIVITE";
     public static final String ACTION_UZAK_SAG = "kisisel.action.UZAK_SAG_SECIM";
     public static final String ACTION_UZAK_SOL = "kisisel.action.UZAK_SOL_CERCEVE";
@@ -30,14 +32,25 @@ public class Kisisel extends AppWidgetProvider {
 	RemoteViews rv;
 	ComponentName cn;
 	String s="",o="ana";
+	public static boolean servisDurum = false;
+
+	public static void servisBaslat(Context context){
+		if (!servisDurum) {
+			try {
+				context.startService(new Intent(context, Guncelle.class));
+				servisDurum = true;
+			} catch (Exception e) {
+				servisDurum = false;
+				logla("hata:"+e);
+			}
+		}
+	}
 
 	public void init(Context context){
 		awm = AppWidgetManager.getInstance(context);
 		cn = new ComponentName(context,getClass());
 		rv = new RemoteViews(context.getPackageName(),R.layout.ana_alet_zemini);
 		this.context = context;
-		setBilgi(s);
-		setSag(o);
         ayarla();
 	}
     @Override
@@ -47,6 +60,7 @@ public class Kisisel extends AppWidgetProvider {
 		switch (aksiyon) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
 				s = "kuruldu";
+				servisBaslat(context);
 				break;
             case AppWidgetManager.ACTION_APPWIDGET_UPDATE:
                 s = tarihGetir("HH:mm:ss") + " de guncellendi..";
@@ -88,6 +102,9 @@ public class Kisisel extends AppWidgetProvider {
                     s = kayitlar.getString("not",null);
                 }
                 break;
+			case Kisisel.ACTION_GUNCELLE:
+				logla("buralarda..");
+				break;
 			default:
 				logla("aks:"+aksiyon);
                 break;
@@ -109,6 +126,9 @@ public class Kisisel extends AppWidgetProvider {
 	}
 
 	public void ayarla(){
+		setBilgi(s);
+		setSag(o);
+		servisBaslat(context);
 		listeayarla();
 	}
 

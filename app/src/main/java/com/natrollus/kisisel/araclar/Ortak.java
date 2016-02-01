@@ -1,6 +1,13 @@
 package com.natrollus.kisisel.araclar;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.SystemClock;
 import android.util.Log;
+
+import com.natrollus.kisisel.Kisisel;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,6 +36,20 @@ public class Ortak {
             e.printStackTrace();
         }
         return null;
+    }
+    public static void alarmKapaAc(Context context, boolean ackapa) {
+        AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(Kisisel.ACTION_GUNCELLE);
+        PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
+
+        if (ackapa) {
+            am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 1000, (long) (1f * 1000), pi);
+            logla("alarm kuruldu");
+        } else {
+            am.cancel(pi);
+            logla("alarm kapandi");
+        }
+
     }
 
 }

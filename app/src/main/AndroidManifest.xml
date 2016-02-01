@@ -19,10 +19,12 @@
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
 				<action android:name="kisisel.action.UZAK_SAG_SECIM"/>
 				<action android:name="kisisel.action.UZAK_SOL_CERCEVE"/>
-			</intent-filter>
+                <action android:name="kisisel.action.GUNCELLE"/>
+            </intent-filter>
 			<meta-data android:name="android.appwidget.provider" android:resource="@xml/ayar"/>
 		</receiver>
         <receiver android:name=".araclar.Tasiyici"/>
+        <service android:name=".servis.guncelleme.Guncelle"/>
         <service android:name=".servis.gorunum.UzakServis" android:permission="android.permission.BIND_REMOTEVIEWS"/>
     </application>
 </manifest>
