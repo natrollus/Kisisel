@@ -20,6 +20,9 @@ public final class R {
         public static final int sag_li_taban=0x7f060004;
         public static final int sag_li_yazi=0x7f060005;
         public static final int sag_secim_bolgesi=0x7f060003;
+        public static final int salon_arama=0x7f06000c;
+        public static final int salon_paylas=0x7f06000d;
+        public static final int salon_yildiz=0x7f06000b;
         public static final int sol_cerceve=0x7f060002;
         public static final int sol_li_acil_buton=0x7f060008;
         public static final int sol_li_acil_taban=0x7f060006;
@@ -33,6 +36,7 @@ public final class R {
         public static final int sag_li=0x7f030002;
         public static final int sol_li_acil=0x7f030003;
         public static final int sol_li_normal=0x7f030004;
+        public static final int sol_li_salon=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

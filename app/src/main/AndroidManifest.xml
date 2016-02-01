@@ -23,6 +23,6 @@
 			<meta-data android:name="android.appwidget.provider" android:resource="@xml/ayar"/>
 		</receiver>
         <receiver android:name=".araclar.Tasiyici"/>
-        <service android:name=".gorunum.UzakGorunum" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name=".servis.gorunum.UzakServis" android:permission="android.permission.BIND_REMOTEVIEWS"/>
     </application>
 </manifest>

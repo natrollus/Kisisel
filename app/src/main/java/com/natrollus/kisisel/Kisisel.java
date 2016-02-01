@@ -7,8 +7,7 @@ import android.widget.*;
 
 import com.natrollus.kisisel.araclar.Baglanti;
 import com.natrollus.kisisel.araclar.Tasiyici;
-import com.natrollus.kisisel.gorunum.UzakGorunum;
-import com.natrollus.kisisel.gorunum.UzakGorunumListe;
+import com.natrollus.kisisel.servis.gorunum.UzakServis;
 
 import java.util.concurrent.ExecutionException;
 
@@ -71,7 +70,17 @@ public class Kisisel extends AppWidgetProvider {
                 o = intent.getStringExtra(Tasiyici.SAGDAN);
                 break;
             case Kisisel.ACTION_UZAK_SOL:
-                logla("sol sonuc:"+intent.getStringExtra(Tasiyici.SOLDAN));
+				switch (intent.getStringExtra(Tasiyici.SOLDAN)) {
+					case "sln1":
+						logla("1. spotlar yandi..");
+						break;
+					case "sln2":
+						logla("2. spotlar yandi..");
+						break;
+					case "sln3":
+						logla("gizli isik yandi..");
+						break;
+				}
                 break;
             case Kisisel.ACTION_AKTIVITE:
                 String islem = intent.getStringExtra("islem");
@@ -83,8 +92,7 @@ public class Kisisel extends AppWidgetProvider {
 				logla("aks:"+aksiyon);
                 break;
 		}
-		logla("o:"+o);
-        init(context);
+		if (!aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) init(context);
     }
 
 	private void baglan(String url, String metod) {
@@ -105,8 +113,8 @@ public class Kisisel extends AppWidgetProvider {
 	}
 
 	public void listeayarla(){
-        Intent uzak_sag_secim = new Intent(Kisisel.ACTION_UZAK_SAG,null,context, UzakGorunum.class);
-		Intent uzak_sol_cerceve = new Intent(Kisisel.ACTION_UZAK_SOL,null,context, UzakGorunum.class);
+        Intent uzak_sag_secim = new Intent(Kisisel.ACTION_UZAK_SAG,null,context, UzakServis.class);
+		Intent uzak_sol_cerceve = new Intent(Kisisel.ACTION_UZAK_SOL,null,context, UzakServis.class);
 
 		awm.notifyAppWidgetViewDataChanged(awm.getAppWidgetIds(cn), R.id.sol_cerceve);
 

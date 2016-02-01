@@ -11,7 +11,7 @@ import static com.natrollus.kisisel.araclar.Ortak.logla;
 
 public class Tasiyici extends BroadcastReceiver {
 
-    public static final String[] SAG_SECIM_LISTE_BASLIKLARI = {"ana","kamera","btc-e","acil","nedir","yaz","kapa"};
+    public static final String[] SAG_SECIM_LISTE_BASLIKLARI = {"ana","not","oturma o.","salon","mutfak","yatak o.","priz","diger"};
     public static final String SAGDAN = "com.kisisel.extra.SAGDAN";
     public static final String SOLDAN = "com.kisisel.extra.SOLDAN";
 
@@ -35,7 +35,7 @@ public class Tasiyici extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Intent gecis = new Intent(intent.getAction());
-        logla("gecis nedir:"+intent.getAction());
+        //logla("gecis nedir:"+intent.getAction());
         if (intent.getAction().equals(Kisisel.ACTION_UZAK_SAG)){
             gecis.putExtra(SAGDAN,intent.getStringExtra(SAGDAN));
         } else if (intent.getAction().equals(Kisisel.ACTION_UZAK_SOL)){

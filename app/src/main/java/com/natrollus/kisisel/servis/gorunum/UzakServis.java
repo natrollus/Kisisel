@@ -1,30 +1,34 @@
-package com.natrollus.kisisel.gorunum;
+package com.natrollus.kisisel.servis.gorunum;
 
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
-import android.widget.RemoteViewsService.RemoteViewsFactory;
+import android.widget.RemoteViewsService;
 
 import com.natrollus.kisisel.Kisisel;
 import com.natrollus.kisisel.R;
 import com.natrollus.kisisel.araclar.Tasiyici;
 
-import static com.natrollus.kisisel.araclar.Ortak.logla;
-import static com.natrollus.kisisel.araclar.Tasiyici.SOLDAN;
 import static com.natrollus.kisisel.araclar.Tasiyici.getBilgi;
 import static com.natrollus.kisisel.araclar.Tasiyici.getSag;
 
-public class UzakGorunumListe implements RemoteViewsFactory {
+public class UzakServis extends RemoteViewsService {
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new UzakFabrika(getApplicationContext(),intent);
+    }
+}
+
+class UzakFabrika implements RemoteViewsService.RemoteViewsFactory {
 
     Context context;
     Intent intent;
     RemoteViews satir;
     String paketIsmi = null;
     String aksiyon = null;
-	
 
-    public UzakGorunumListe(Context context, Intent intent) {
+
+    public UzakFabrika(Context context, Intent intent) {
         this.context = context;
         this.paketIsmi = context.getPackageName();
         this.intent = intent;
@@ -37,11 +41,12 @@ public class UzakGorunumListe implements RemoteViewsFactory {
 
     @Override
     public void onDataSetChanged() {
-		if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
+        /*
+        if (aksiyon.equals(Kisisel.ACTION_UZAK_SAG)){
             logla("sag data degisti:" + getBilgi());
         } else if (aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) {
             logla("sol data degisti:" + getSag());
-        }
+        }*/
     }
 
     @Override
@@ -88,6 +93,16 @@ public class UzakGorunumListe implements RemoteViewsFactory {
                     satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
                     satir.setTextViewText(R.id.sol_li_normal_yazi, "yazdan yaz buda:" + sag);
                     break;
+                case "salon":
+                    satir = new RemoteViews(paketIsmi, R.layout.sol_li_salon);
+                    int[] salonTuslar = {R.id.salon_arama,R.id.salon_yildiz,R.id.salon_paylas};
+                    String[] salonFonksiyon = {"sln1","sln2","sln3"};
+                    for (int i = 0;i<salonTuslar.length;i++){
+                        Intent salon = new Intent(intent.getAction());
+                        salon.putExtra(Tasiyici.SOLDAN,salonFonksiyon[i]);
+                        satir.setOnClickFillInIntent(salonTuslar[i], salon);
+                    }
+                    break;
                 default:
                     satir = new RemoteViews(paketIsmi, R.layout.sol_li_normal);
                     satir.setTextViewText(R.id.sol_li_normal_yazi, "sag nedir:" + sag);
@@ -105,7 +120,7 @@ public class UzakGorunumListe implements RemoteViewsFactory {
 
     @Override
     public int getViewTypeCount() {
-        return 2;
+        return 3;
     }
 
     @Override
