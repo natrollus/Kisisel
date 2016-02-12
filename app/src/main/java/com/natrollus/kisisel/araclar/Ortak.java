@@ -43,11 +43,11 @@ public class Ortak {
         PendingIntent pi = PendingIntent.getBroadcast(context,0,intent,0);
 
         if (ackapa) {
-            am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 1000, (long) (1f * 1000), pi);
-            logla("alarm kuruldu");
+            am.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 1000, (long) (1f * 1000), pi);
+            logla("alarm acik..");
         } else {
             am.cancel(pi);
-            logla("alarm kapandi");
+            logla("alarm kapali..");
         }
 
     }

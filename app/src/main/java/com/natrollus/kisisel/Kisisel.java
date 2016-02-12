@@ -12,6 +12,7 @@ import com.natrollus.kisisel.servis.guncelleme.Guncelle;
 
 import java.util.concurrent.ExecutionException;
 
+import static com.natrollus.kisisel.araclar.Ortak.alarmKapaAc;
 import static com.natrollus.kisisel.araclar.Tasiyici.setBilgi;
 import static com.natrollus.kisisel.araclar.Ortak.logla;
 import static com.natrollus.kisisel.araclar.Ortak.tarihGetir;
@@ -32,15 +33,21 @@ public class Kisisel extends AppWidgetProvider {
 	RemoteViews rv;
 	ComponentName cn;
 	String s="",o="ana";
-	public static boolean servisDurum = false;
+	static Intent servis = null;
 
-	public static void servisBaslat(Context context){
-		if (!servisDurum) {
+	public static void servisKontrol(Context context,boolean servisDurum){
+		if (servis==null) servis = new Intent(context, Guncelle.class);
+		if (servisDurum) {
 			try {
-				context.startService(new Intent(context, Guncelle.class));
-				servisDurum = true;
+				context.startService(servis);
 			} catch (Exception e) {
-				servisDurum = false;
+				context.stopService(servis);
+				logla("hata:"+e);
+			}
+		} else {
+			try {
+				context.stopService(servis);
+			} catch (Exception e) {
 				logla("hata:"+e);
 			}
 		}
@@ -53,6 +60,7 @@ public class Kisisel extends AppWidgetProvider {
 		this.context = context;
         ayarla();
 	}
+	int i = 0;
     @Override
     public void onReceive(Context context,Intent intent) {
         kayitlar = context.getSharedPreferences("notlar", Context.MODE_PRIVATE);
@@ -60,28 +68,38 @@ public class Kisisel extends AppWidgetProvider {
 		switch (aksiyon) {
 			case AppWidgetManager.ACTION_APPWIDGET_ENABLED:
 				s = "kuruldu";
-				servisBaslat(context);
+				logla("kuruldu");
+				servisKontrol(context,true);
+				init(context);
 				break;
             case AppWidgetManager.ACTION_APPWIDGET_UPDATE:
                 s = tarihGetir("HH:mm:ss") + " de guncellendi..";
+				servisKontrol(context,true);
+				init(context);
                 break;
             case AppWidgetManager.ACTION_APPWIDGET_OPTIONS_CHANGED:
                 s = "opt";
+				servisKontrol(context,true);
+				init(context);
                 break;
             case Kisisel.ACTION_SAG:
 				s = "sag";
+				init(context);
 				break;
 			case Kisisel.ACTION_URL:
 				baglan("http://natrollus.com","GET");
+				init(context);
 				break;
 			case Kisisel.ACTION_NOT:
 				s = "sol";
 				break;
 			case Kisisel.ACTION_RESIZE:
                 s = "yerinden cikti..";
+				init(context);
 				break;
             case Kisisel.ACTION_UZAK_SAG:
                 o = intent.getStringExtra(Tasiyici.SAGDAN);
+				init(context);
                 break;
             case Kisisel.ACTION_UZAK_SOL:
 				switch (intent.getStringExtra(Tasiyici.SOLDAN)) {
@@ -96,20 +114,19 @@ public class Kisisel extends AppWidgetProvider {
 						break;
 				}
                 break;
-            case Kisisel.ACTION_AKTIVITE:
-                String islem = intent.getStringExtra("islem");
-                if (islem.equals("not")){
-                    s = kayitlar.getString("not",null);
-                }
-                break;
 			case Kisisel.ACTION_GUNCELLE:
-				logla("buralarda..");
+				i++;
+				logla("say:" + i);
+				break;
+			//case AppWidgetManager.ACTION_APPWIDGET_DELETED:
+			case AppWidgetManager.ACTION_APPWIDGET_DISABLED:
+				alarmKapaAc(context,false);
+				servisKontrol(context,false);
 				break;
 			default:
 				logla("aks:"+aksiyon);
                 break;
 		}
-		if (!aksiyon.equals(Kisisel.ACTION_UZAK_SOL)) init(context);
     }
 
 	private void baglan(String url, String metod) {
@@ -128,7 +145,6 @@ public class Kisisel extends AppWidgetProvider {
 	public void ayarla(){
 		setBilgi(s);
 		setSag(o);
-		servisBaslat(context);
 		listeayarla();
 	}
 
@@ -150,5 +166,4 @@ public class Kisisel extends AppWidgetProvider {
 	public void tazele(){
 		awm.updateAppWidget(cn, rv);
 	}
-	
 }
